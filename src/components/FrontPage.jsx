@@ -214,7 +214,7 @@ const FrontPage = () => {
 
 
             {/* Gold membership */}
-            <section id='gold-membership' className="w-full min-h-screen bg-neutral-950 flex flex-col items-center justify-center text-center px-6 relative overflow-hidden py-24">
+            <section id='gold-membership' className="w-full min-h-screen  bg-neutral-950 flex flex-col items-center justify-center text-center px-6 relative overflow-hidden py-24 mx-4  rounded-3xl">
 
                 {/* Background Gradients/Glows */}
                 <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-yellow-600/20 rounded-full blur-[120px]" />
@@ -573,7 +573,7 @@ const DownloadAppSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className="w-[90%] max-w-6xl bg-slate-50 rounded-[48px] 
-    flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-16 py-12 md:py-20 relative overflow-hidden border border-slate-100 shadow-sm"
+    flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-16 py-12 md:py-20 relative overflow-hidden border border-slate-100 shadow-lg"
             >
                 {/* LEFT CONTENT */}
                 <div className="max-w-lg z-10 text-center md:text-left mt-10 md:mt-0">
@@ -602,10 +602,10 @@ const DownloadAppSection = () => {
                 </div>
 
                 {/* RIGHT PHONE + QR */}
-                <div className="relative z-10">
-                    <div className="w-[280px] h-[540px] rounded-[40px] bg-white border-4 border-gray-100 shadow-2xl flex items-center justify-center relative">
+                <div className="relative z-10 h-[270px] overflow-hidden">
+                    <div className="w-[380px] h-[540px] rounded-[40px] bg-white border-4 border-gray-300 shadow-2xl flex items-start justify-center relative pt-12">
                         {/* Screen */}
-                        <div className="w-[92%] h-[96%] bg-slate-50 rounded-[32px] flex flex-col items-center justify-center gap-6 px-6 overflow-hidden relative">
+                        <div className="w-[92%] h-[96%] bg-slate-50 rounded-[32px] flex flex-col items-center justify-start gap-6 px-6 overflow-hidden relative pt-8">
                             {/* Decorative header */}
                             <div className="absolute top-0 w-full h-20 bg-blue-50/50 z-0"></div>
 
