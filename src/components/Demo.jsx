@@ -610,85 +610,96 @@ const Demo = () => {
             <DownloadAppSection />
 
             {/* Footer Section */}
-            <footer className="w-full bg-black text-gray-400 pt-20 pb-10 px-8">
+            <footer className="w-full bg-black text-gray-400 pt-20 pb-10 px-8 relative overflow-hidden">
+                {/* Subtle Gradient Background */}
+                <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-[120px]" />
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#ff4f5a]/5 rounded-full blur-[120px]" />
 
                 {/* Top Footer */}
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 relative z-10">
 
                     {/* Brand */}
                     <div>
-                        <h1 className="text-white text-3xl font-bold mb-6">
-                            robin
+                        <h1 className="text-white text-3xl font-bold mb-2">
+                            Rabin's
                         </h1>
+                        <p className="text-gray-500 text-sm font-medium">Photography</p>
+                        <p className="text-gray-600 text-xs mt-4 leading-relaxed max-w-xs">Book. Track. Deliver. Professional photography management, all in one app.</p>
                     </div>
 
                     {/* Column 1 */}
                     <div>
-                        <h3 className="text-white font-semibold mb-4">Studio</h3>
-                        <ul className="space-y-2">
-                            <li>About Us</li>
-                            <li>Our Team</li>
-                            <li>Gallery</li>
-                            <li>Behind the Scenes</li>
-                            <li>Careers</li>
-                            <li>Investor Relations</li>
+                        <h3 className="text-white font-semibold mb-4">For Photographers</h3>
+                        <ul className="space-y-2 text-sm">
+                            <li className="hover:text-white transition-colors cursor-pointer">Studio Access</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Booking System</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Portfolio</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Pricing</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Careers</li>
                         </ul>
                     </div>
 
                     {/* Column 2 */}
                     <div>
                         <h3 className="text-white font-semibold mb-4">For Clients</h3>
-                        <ul className="space-y-2">
-                            <li>Book a Shoot</li>
-                            <li>Wedding Photography</li>
-                            <li>Portrait Sessions</li>
-                            <li>Commercial Shoots</li>
+                        <ul className="space-y-2 text-sm">
+                            <li className="hover:text-white transition-colors cursor-pointer">Book a Session</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Track Project</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Wedding Photography</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Premium Access</li>
                         </ul>
                     </div>
 
                     {/* Column 3 */}
                     <div>
-                        <h3 className="text-white font-semibold mb-4">Learn More</h3>
-                        <ul className="space-y-2">
-                            <li>Privacy Policy</li>
-                            <li>Security</li>
-                            <li>Terms of Service</li>
-                            <li>Help & Support</li>
-                            <li>Report an Issue</li>
-                            <li>Blog</li>
+                        <h3 className="text-white font-semibold mb-4">Company</h3>
+                        <ul className="space-y-2 text-sm">
+                            <li className="hover:text-white transition-colors cursor-pointer">About Us</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Blog</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Privacy Policy</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Terms of Service</li>
+                            <li className="hover:text-white transition-colors cursor-pointer">Help & Support</li>
                         </ul>
                     </div>
 
                     {/* Column 4 */}
                     <div>
-                        <h3 className="text-white font-semibold mb-4">Social Links</h3>
+                        <h3 className="text-white font-semibold mb-4">Connect With Us</h3>
 
                         {/* Social Icons */}
-                        <div className="flex gap-3 mb-6">
-                            <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">in</div>
-                            <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">ig</div>
-                            <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">yt</div>
-                            <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">fb</div>
-                            <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">x</div>
+                        <div className="flex gap-3 mb-8">
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-white/20 transition-all">
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.84v8.37h2.84v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.84M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+                            </a>
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-white/20 transition-all">
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.3 2c-1.6 0-2.8 1.3-2.8 2.8v8.4c0 1.6 1.3 2.8 2.8 2.8h8.4c1.6 0 2.8-1.3 2.8-2.8V7.8c0-1.6-1.3-2.8-2.8-2.8H7.5m9.6 1.5a.9.9 0 0 1 .9-.9.9.9 0 0 1 .9.9.9.9 0 0 1-.9.9.9.9 0 0 1-.9-.9m-5.1 1.4a3.6 3.6 0 0 1 3.6 3.6 3.6 3.6 0 0 1-3.6 3.6 3.6 3.6 0 0 1-3.6-3.6 3.6 3.6 0 0 1 3.6-3.6m0 1.6a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"/></svg>
+                            </a>
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-white/20 transition-all">
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2s9 5 20 5a9.5 9.5 0 0 0-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 0 1-9.56 5.12A10.38 10.38 0 0 1 0 13.07"/></svg>
+                            </a>
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-white/20 transition-all">
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a2 2 0 0 1 2-2h3z"/></svg>
+                            </a>
                         </div>
 
                         {/* App Buttons */}
                         <div className="space-y-3">
-                            <img src="https://b.zmtcdn.com/data/o2_assets/aad864bd17860b27634fe621001c32db1739350431.png" alt="App Store" className="h-10 cursor-pointer" />
-                            <img src="https://b.zmtcdn.com/data/o2_assets/aad864bd17860b27634fe621001c32db1739350431.png" alt="Google Play" className="h-10 cursor-pointer" />
+                            <button className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white text-sm font-medium hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.05 13.5c-.91 0-1.82-.33-2.5-1.02L3.91 6.51c.49-.4.82-.98.82-1.54 0-1.37-1.12-2.5-2.5-2.5S0 3.6 0 5c0 1.37 1.12 2.5 2.5 2.5.6 0 1.19-.21 1.66-.59l10.64 5.97c-.08.42-.12.84-.12 1.27 0 .42.04.85.12 1.27L4.16 19.09c-.47-.38-1.06-.59-1.66-.59-1.38 0-2.5 1.13-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5c0-.56-.33-1.14-.82-1.54l10.64-5.97c.68.69 1.59 1.02 2.5 1.02 1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5Z"/></svg>
+                                Download App
+                            </button>
                         </div>
                     </div>
 
                 </div>
 
                 {/* Divider */}
-                <div className="max-w-7xl mx-auto border-t border-gray-800 mt-16 pt-6 text-sm text-gray-500">
-                    <p>
-                        By continuing past this page, you agree to our Terms of Service, Cookie Policy,
-                        Privacy Policy and Content Policies.
+                <div className="max-w-7xl mx-auto border-t border-gray-800 mt-16 pt-6 text-sm text-gray-600 relative z-10">
+                    <p className="mb-2">
+                        By continuing past this page, you agree to our Terms of Service, Privacy Policy and Cookie Policy.
                     </p>
-                    <p className="mt-2">
-                        © 2026 Robin Photo Studio. All rights reserved.
+                    <p>
+                        © 2026 Rabin's Photography. All rights reserved. | Kolkata, India
                     </p>
                 </div>
 
